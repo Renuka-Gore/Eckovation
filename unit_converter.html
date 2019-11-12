@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Write a program to convert the unit of given variable -->
+	<title>Convert its unit!</title>
+</head>
+<body>
+  <h3>Basic unit converter</h3>
+   <p>Enter a number and choose its unit conversion</p>
+ <table>
+ <tr>
+ 	<th><input type="number" id="mytab" name="val" placeholder="Enter quantity"></th>
+ 	<th>
+ 		<input list="unit" name="units" placeholder="choose unit" id="units">
+ 		<datalist id="unit">
+ 	 <option value="Meter to Centimeter">
+ 	 <option value="Kilometer to Meter">
+ 	 <option value="Centimeter to Meter">
+ 	 <option value="Meter to Kilometer">
+    </datalist>
+   </th>
+   <th>
+   	<button onclick="Fun1(document.getElementById('mytab').value)">Convert</button>
+   </th>
+ </tr>
+ 
+</table>
+<div id="demo"></div>
+<script>
+function Fun1(mytab) {
+ var x=	document.getElementById('mytab').value;
+ 
+ var y = document.getElementById("units").value;
+ 
+
+  if (y == "Meter to Centimeter") {
+  	var result = x*100;
+  	document.getElementById('demo').innerHTML = result+"Centimeter";
+  }
+
+  if (y == "Kilometer to Meter") {
+  	var result = x * 1000;
+  	document.getElementById('demo').innerHTML = result+"Meter";
+  }
+
+  if (y=="Centimeter to Meter") {
+    var result = x /100;
+    document.getElementById('demo').innerHTML = result+"Meter";
+  }
+
+  if (y=="Meter to Kilometer") {
+  var result = x / 1000;
+  document.getElementById('demo').innerHTML = result+"Kilometer";
+  }
+
+
+}
+</script>
+</body>
+</html>

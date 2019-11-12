@@ -1,0 +1,32 @@
+<p id="demo"></p>
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- write a program to find that given no. is even or odd -->
+	<title>Even and odd</title>
+</head>
+<body>
+   <h3>Find if its even or odd!</h3>
+   <p>Enter a number to know if it is even or odd</p>
+ <table>
+ <tr>
+ 	<th><input type="number" id="mytab" value=""></th>
+ 	<th><button onclick="myFun1()">Find </button></th>
+ </tr>
+</table>
+<p id="demo"></p>
+
+<script>
+function myFun1() {
+ var y = document.getElementById("mytab").value;
+  if (y%2==0) {
+  document.getElementById("demo").innerHTML = y + " is even number" ;
+    }
+   else{
+   	document.getElementById("demo").innerHTML = y + " is odd number"  ;
+   } 
+}
+
+</script>
+</body>
+</html>

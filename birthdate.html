@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Find the current date  -->
+	<title>Find your current date</title>
+</head>
+<body>
+   <h3>Find the current date </h3>
+   <table>
+   	<tr>
+   		<td>
+   			<button onclick="myFunction()">Current date</button>
+   		</td>
+   	</tr>
+   </table>
+<div id="demo"></div>
+   <script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("demo").innerHTML = d;
+}
+</script>
+</body>
+</html>

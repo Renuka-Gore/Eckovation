@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Find the rate if interest when principal ammount,Annual rate ,Time period is given-->
+	<title>Rate of interest</title>
+</head>
+<body>
+  <h3>Rate of interest calulator</h3>
+  <table>
+  	<tr>
+  		<td>
+  			<label>Enter principal ammount</label>
+  		</td>
+  		<td>
+  			<input type="number" name="P" placeholder="principal ammount" id="p">
+  		</td>
+  	</tr>
+  	<tr>
+  		<td>
+  			<label>Enter annual rate</label>
+  		</td>
+  		<td>
+  			<input type="number" name="R" placeholder="Annual rate" id="r">
+  		</td>
+  	</tr>
+  	<tr>
+  		<td>
+  			<label>Time period in year</label>
+  		</td>
+  		<td>
+  			<input type="number" name="T" placeholder="Time period" id="t">
+  		</td>
+  	</tr>
+  	<tr>
+  		<td></td>
+  		<td>
+  			<button onclick="myFun(document.getElementById('p').value,document.getElementById('r').value,document.getElementById('t').value)">Find</button>
+  		</td>
+  	</tr>
+  </table>
+  <div id="demo"></div>
+
+<script>
+	function myFun(p,r,t){
+		var p = document.getElementById('p').value;
+		var r =  document.getElementById('r').value;
+		var t =  document.getElementById('t').value;
+		var interest = p*r*t;
+		 document.getElementById('demo').innerHTML = interest;
+	}
+</script>
+</body>
+</html>

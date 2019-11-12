@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Take input from user and print the table of it-->
+	<title>Table using javascript</title>
+</head>
+<body>
+ <h3>Table creater</h3>
+ <p>Enter a number to create its mathamatical table</p>
+ <table>
+ <tr>
+ 	<th><input type="number" id="mytab" value=""></th>
+ 	<th><button onclick="myFun1()">Create </button></th>
+ </tr>
+</table>
+<p id="demo"></p>
+
+<script>
+function myFun1() {
+ var y = document.getElementById("mytab").value;
+  var text = "";
+  var i;
+  for (i = 0; i <= 10; i++) {
+    text+= i*y + "<br>";   
+  }
+  document.getElementById("demo").innerHTML = text  ;
+}
+
+</script>
+</html>

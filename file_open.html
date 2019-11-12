@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$myfile = fopen("/home/renuka/Desktop/My folder/BSC.pdf", "r") or die("Unable to open file!");
+echo fread($myfile,filesize("/home/renuka/Desktop/My folder/BSC.pdf"));
+fclose($myfile);
+?>
+
+</body>
+</html>
