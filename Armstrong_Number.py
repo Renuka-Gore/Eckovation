@@ -14,6 +14,6 @@ def armstrong(num):
         print(num, "is an Armstrong number")
     else:
 
-
+armstrong(num)
 
 
