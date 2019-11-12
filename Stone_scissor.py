@@ -1,7 +1,12 @@
 from random import randint
 print("Welcome to stone paper scssor")
 print("Enter 1 to play")
-play = int(input())
+try:
+    play = int(input())
+except:
+    print("Please enter valid input!")
+    exit()
+    
 if play == 1:
     play = True
 else:
@@ -20,7 +25,13 @@ def choice():
 while (play):
     inp = ["None", "Stone", "Scissor", "Paper"]
     choice()
-    player = int(input())
+    
+     try:
+       player = int(input())
+    except:
+        print("Enter valid input!")
+        continue
+        
     computer = randint(1, 3)
     print("I choose ", inp[player])
     if player == computer :
